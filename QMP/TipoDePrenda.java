@@ -1,5 +1,9 @@
 package QMP;
 
-public enum TipoDePrenda {
-    REMERA, PANTALON, POLLERA, CAMISA_MANGA_CORTA, BLUSA //...etc...
+public class TipoDePrenda {
+    Categoria categoria;
+
+    public TipoDePrenda(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }

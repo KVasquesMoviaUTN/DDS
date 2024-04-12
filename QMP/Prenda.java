@@ -1,5 +1,6 @@
 package QMP;
 
+import static java.util.Objects.requireNonNull;
 
 public class Prenda {
     TipoDePrenda tipoDePrenda;
@@ -10,8 +11,12 @@ public class Prenda {
 
 
     public Prenda(TipoDePrenda tipoDePrenda, Material material, Color color) {
-        this.tipoDePrenda = tipoDePrenda;
-        this.material = material;
-        this.color = color;
+        this.tipoDePrenda = requireNonNull(tipoDePrenda, "tipo de prenda es obligatorio");
+        this.material = requireNonNull(material, "material es obligatorio");
+        this.color = requireNonNull(color, "color es obligatorio");
+    }
+
+    public void setColorSecundario(Color colorSecundario) {
+        this.colorSecundario = colorSecundario;
     }
 }
