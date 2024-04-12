@@ -1,9 +1,9 @@
 package QMP;
 
 public class Color {
-    int rojo, verde, azul;
+    public Integer rojo, verde, azul;
 
-    public Color(int rojo, int verde, int azul) {
+    public Color(Integer rojo, Integer verde, Integer azul) {
         this.rojo = rojo;
         this.verde = verde;
         this.azul = azul;

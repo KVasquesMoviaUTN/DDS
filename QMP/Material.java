@@ -1,4 +1,5 @@
 package QMP;
 
-public class Material {
+public enum Material {
+    TELA, JEAN, ALGODON, CUERO;
 }
